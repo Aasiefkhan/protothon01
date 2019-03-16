@@ -5,12 +5,7 @@ dimension = image.shape
 print(dimension)
 for i in range (0,dimension[0]):
     for j in range (0,dimension[1]):
-        image[i][j][1] = 0
-        image[i][j][2] = 0
         image[i][j] = image[i][j][0]*0.34 + image[i][j][1]*0.51 + image[i][j][2]*0.15
-        #image[i][j][0] = image[i][j][0]*0.1
-        #image[i][j][1] = image[i][j][1]*0.7
-        #image[i][j][2] = image[i][j][2]*0.2
 cv2.imshow('grayscale',image)
 thresh = 75
 im_bw = cv2.threshold(image, thresh, 255, cv2.THRESH_BINARY)[1]
