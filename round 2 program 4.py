@@ -1,5 +1,5 @@
 import cv2 
-image = cv2.imread('F:/sea.jpeg')
+image = cv2.imread('F:/sea.png')
 cv2.imshow('original',image)
 dimension = image.shape
 print(dimension)
